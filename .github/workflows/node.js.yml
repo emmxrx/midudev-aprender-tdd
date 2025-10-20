@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v5
       - name: 'Hello World'
         run: echo "Hello World"
       - name: Dime la fecha 
         run: date
       - name: Muestrame el contenido del directorio
-        run: ls
+        run: ls -la
    
